@@ -1,0 +1,113 @@
+.hero {
+    text-align: center;
+    padding-bottom: 5em;
+    background-color: var(--veryLightGray);
+}
+
+.hero-imagen .hero-imagenSrc {
+    display: none !important;
+}
+
+.hero-imagen {
+    height: 300px;
+    margin: 0em -1.5em;
+    background: url(/images/image-mockups.png) bottom no-repeat, url('/images/bg-intro-mobile.svg') center no-repeat;
+    background-size: 285px, cover;
+}
+
+.hero-description .tittle__h1 {
+    padding-top: 1em;
+    font-size: 2.5em;
+}
+
+.hero-description .parraf {
+    font-size: 0.9em;
+    line-height: 2;
+}
+
+.hero .boton {
+    margin-top: 0.5em;
+    padding: 1em 3em;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        text-align: left;
+        background: url('/images/bg-intro-desktop.svg') left 350px top 50px no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        box-sizing: border-box;
+    }
+    
+    .hero-content {
+        position: relative;
+        display: grid;
+        grid-template-areas: "description image";
+        grid-template-columns: 400px 1fr;
+        align-items: center;
+        min-height: 600px;
+    }
+
+    .hero-imagen {
+        height: 300px;
+        margin: 0 -1.5em;
+        background: none;
+    }
+
+    .hero-imagen {
+        grid-area: image;
+        position: absolute;
+        min-height: inherit;
+        width: 500px;
+        height: 550px;
+        background: url(/images/image-mockups.png) left 5px bottom -50px no-repeat;
+    }
+
+    .hero-imagen .hero-imagenSr {
+        display: none;
+    }
+    
+    .hero-description {
+        grid-area: description;
+    }
+    
+    .hero-description .tittle__h1 {
+        font-size: 3em;
+    }
+
+    .hero-description .parraf {
+        line-height: 1.8;
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        text-align: left;
+        background: url('/images/bg-intro-desktop.svg') left 600px top -280px no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        box-sizing: border-box;
+    }
+
+    .hero-imagen .hero-imagenSrc {
+        display: block !important;
+        position: relative;
+        top: -115px;
+        right: -230px;
+    }
+    
+    .hero-content {
+        /* position: static; */
+    }
+
+    .hero-imagen {
+        background: url(/images/image-mockups.png) right bottom no-repeat;
+        /* background-size: 100%; */
+        background:none;
+        /* width: 730px; */
+        left: 0;
+    } 
+
+}

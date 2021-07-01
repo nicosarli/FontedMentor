@@ -1,0 +1,78 @@
+@import "./header.css";
+@import "./menu.css";
+@import "./hero.css"; 
+@import "./why.css";
+@import "./latestArticles.css";
+@import "./footer.css";
+
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html,body{
+  overflow-x: hidden; 
+  color:black; 
+  font-family:'Opens Sans',helvetica;
+  height:100%; 
+  width:101%; 
+  margin: 0px; 
+  padding: 0px; 
+}
+
+* {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 0 1.5em;
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tittle__h1 {
+  font-size: 2em;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+  color: var(--darkBlue);
+}
+
+.tittle__h2 {
+  font-size: 1em;
+}
+
+.tittle__h3 {
+  font-size: 1em;
+}
+
+.parraf {
+  font-size: .9em;
+  padding-bottom: 1em;
+  line-height: 1.5;
+  color: var(--grayishBlue);
+  padding-bottom: 1.5em;
+}
+
+.boton {
+  border-radius: 5em;
+  padding: 0.7em 1.5em;
+  background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+  border: none;
+  font-size: 0.9em;
+  color: var(--White);
+}
+
+.is-hidden {
+  display: none;
+}
+

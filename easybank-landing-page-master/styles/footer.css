@@ -1,0 +1,193 @@
+.footer {
+    padding-top: 2em;
+    background: var(--darkBlue);
+    color: var(--White);
+    text-align: center;
+}
+
+.footer .redes {
+    display: grid;
+    grid-template-columns: repeat(5,25px);
+    grid-column-gap: 1em;
+    justify-content: center;
+    margin: 2.5em 0;
+}
+
+.footer .footer-links a {
+    display: block;
+    color: var(--lightGrayishBlue);
+    text-decoration: none;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+
+.footer-copyright {
+    margin-top: 2.5em;
+    font-size: 0.7em;
+    color: var(--grayishBlue);
+}
+
+.footer .boton {
+    margin-top: 1em;
+    font-size: 0.85em;
+    display: inline;
+    margin: auto;
+    cursor: pointer;
+}
+
+.footer .footer-logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.icono {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+}
+
+.icono-facebook {
+    background: url('/images/icon-facebook.svg') center no-repeat;
+}
+
+.icono-youtube {
+    background: url('/images/icon-youtube.svg') center no-repeat;
+}
+
+.icono-twitter {
+    background: url('/images/icon-twitter.svg') center no-repeat;
+}
+
+.icono-pinterest {
+    background: url('/images/icon-pinterest.svg') center no-repeat;
+}
+
+.icono-instagram {
+    background: url('/images/icon-instagram.svg') center no-repeat;
+}
+
+@media screen and (min-width: 820px) {
+    .footer .container-footer {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-areas: "logo links boton" 
+        "redes links copyright";  
+        grid-column-gap: 3.5em;
+        max-width: 100%;
+        /* padding: 0 4em; */
+    }
+    .footer .footer-links {
+        grid-area: links;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.3em;
+        text-align: left;
+        width: 100%;
+    }
+
+    .footer .footer-logo {
+        grid-area: logo;
+        margin: initial;
+    }
+    
+    .footer .footer-boton {
+        grid-area: boton;
+        text-align: right;
+        font-size: 1.2em;
+    }
+    
+    .footer .redes {
+        grid-area: redes;
+    }
+    
+    .footer .footer-copyright {
+        grid-area: copyright;
+        text-align: right;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer .container-footer {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-areas: "logo links boton" 
+        "redes links copyright";  
+        grid-column-gap: 5em;
+        max-width: none;
+        /* padding: 0 4em; */
+    }
+
+    .footer .footer-links {
+        grid-area: links;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        align-self: center;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    .footer .footer-logo {
+        grid-area: logo;
+        margin: initial;
+    }
+
+    .footer .footer-boton {
+        grid-area: boton;
+        text-align: right;
+        font-size: 1.2em;
+    }
+
+    .footer .redes {
+        grid-area: redes;
+    }
+
+    .footer .footer-copyright {
+        grid-area: copyright;
+        text-align: right;
+        font-size: 0.9em;
+    }
+
+    /* .footer .wrapper {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-areas: "logo links boton" 
+        "redes links copyright";  
+        grid-column-gap: 5em;
+        max-width: none;
+        padding: 0 4em;
+    }
+
+    .footer .footer-links {
+        grid-area: links;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        align-self: center;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    .footer .footer-logo {
+        grid-area: logo;
+        margin: initial;
+    }
+
+    .footer .footer-boton {
+        grid-area: boton;
+        text-align: right;
+        font-size: 1.2em;
+    }
+
+    .footer .redes {
+        grid-area: redes;
+    }
+
+    .footer .footer-copyright {
+        grid-area: copyright;
+        text-align: right;
+        font-size: 0.9em;
+    } */
+}
